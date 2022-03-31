@@ -8,7 +8,7 @@
 
 Name:           %(echo %real_name | tr '_' '-')
 Epoch:          1
-Version:        11.6.112
+Version:        11.6.124
 Release:        1%{?dist}
 Summary:        CUDA NVIDIA Visual Profiler
 License:        CUDA Toolkit
@@ -76,6 +76,9 @@ install -p -m 0644 %{SOURCE3} %{buildroot}%{_metainfodir}/
 %{_libdir}/nvvp
 
 %changelog
+* Thu Mar 31 2022 Simone Caronni <negativo17@gmail.com> - 1:11.6.124-1
+- Update to 11.6.124 (CUDA 11.6.2).
+
 * Tue Mar 08 2022 Simone Caronni <negativo17@gmail.com> - 1:11.6.112-1
 - Update to 11.6.112 (CUDA 11.6.1).
 
