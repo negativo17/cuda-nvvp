@@ -4,11 +4,11 @@
 %global __strip /bin/true
 %global _missing_build_ids_terminate_build 0
 %global _build_id_links none
-%global major_package_version 11-6
+%global major_package_version 11-8
 
 Name:           %(echo %real_name | tr '_' '-')
 Epoch:          1
-Version:        11.7.101
+Version:        11.8.87
 Release:        1%{?dist}
 Summary:        CUDA NVIDIA Visual Profiler
 License:        CUDA Toolkit
@@ -76,6 +76,9 @@ install -p -m 0644 %{SOURCE3} %{buildroot}%{_metainfodir}/
 %{_libdir}/nvvp
 
 %changelog
+* Fri Nov 11 2022 Simone Caronni <negativo17@gmail.com> - 1:11.8.87-1
+- Update to 11.8.87.
+
 * Sun Sep 04 2022 Simone Caronni <negativo17@gmail.com> - 1:11.7.101-1
 - Update to 11.7.101.
 
